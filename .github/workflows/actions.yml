@@ -2,12 +2,12 @@ name: GitHub Actions
 run-name: 🚀
 on: [push]
 jobs:
-    build:
-    runs-on: ubuntu-latest
+  build:
+  runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-      - run: make setup
-      - run: make lint
-      - run: make test
+  steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+    - run: make setup
+    - run: make lint
+    - run: make test
